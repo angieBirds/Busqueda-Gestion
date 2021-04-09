@@ -1,0 +1,559 @@
+﻿
+/*Estilo en general de la pagina*/
+body{
+	text-align: center;
+	margin: 0px;
+	padding:0px;
+	/*Tipo de fuente, evitar cambios en las fuentes en navegadores*/
+	font-family: 'Segoe UI', Roboto, Oxigen, Ubuntu, Cantarell;
+	-webkit-font-smoothing: antialiased;
+}
+/*estilo de link*/
+a{
+	text-decoration: none;
+	color: #444;
+	transition: 300ms all;
+}
+
+a:hover{
+	color:#BDB76B;
+}
+
+/*Selector*/
+input[type="text"], textarea{
+	width: 85%;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding:5px;
+	margin-bottom: 10px;
+}
+
+input[type="text"]:focus{
+	box-shadow: 0px 0px 5px #9ACD32 inset;
+}
+
+/*áreas de texto*/
+textarea{
+	min-height: 70px;
+	max-height: 80px;
+	min-width: 90%;
+	max-width: 95%;
+	font-family: 'Segoe UI', Roboto, Oxigen, Ubuntu, Cantarell;
+	-webkit-font-smoothing: antialiased;
+}
+
+textarea:focus{
+	box-shadow: 0px 0px 5px #9ACD32 inset;
+}
+
+/*Contraseña*/
+input[type="password"]{
+	width: 85%;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding:5px;
+	margin-bottom: 10px;
+}
+
+input[type="password"]:focus{
+	box-shadow: 0px 0px 5px #9ACD32 inset;
+}
+
+/*Marcado de error*/
+.error{
+	color: red!important;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Cabecera de la web*/
+#header{
+	height:120px;
+	width: 100%;
+	background-color: #9ACD32;
+	border-top: 10px solid #BDB76B;
+}
+
+/*Centrar el contenido (clase)*/
+.center{
+	width: 75%;
+	margin: 8px auto;
+}
+
+/* Bloquear movimientos de flotantes*/
+.clearfix{
+	clear:both;
+	float:none;
+}
+
+/*aviso de error*/
+.bad {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #a22;
+	color: #fff
+}
+/*orientación de la fuente en el logo*/
+#logo{
+	width: 35%;
+	font-size: 18px;
+	margin-top: 12px;
+	margin-left: 0px auto;
+}
+
+/*formato de la imagen*/
+#logo img{
+	display: block;
+	float: left;
+	height: 90px;
+	margin-right: 0px;
+}
+
+.log-log{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 45%;
+
+}
+
+.images{
+	margin: auto;
+}
+
+/*Nombre del museo*/
+#brand{
+	display: block;
+	margin: 10px;
+	float: left;
+}
+
+/* LINKS de letreros del header*/
+#menu{
+	width: 70%;
+	float: right;
+	font-size: 18px;
+}
+#menu ul{
+	width: 60%;
+	float: right;
+}
+
+/*Localizacion los letreros del body*/
+#seccion{
+	width: 100%;
+	float: left;
+	font-size: 20px;
+}
+#seccion ul{
+	width: 60%;
+	float: left;
+}
+
+/*Listas horizontales del Header*/
+.estilo ul li{
+	display: inline-block;
+	list-style: none;
+	text-decoration: none;
+	height: 60px;
+	margin-top: 40px;
+	margin-left: 15px;
+	margin-right: 10px;
+}
+
+/* Borrar y modificar de consulta a usuario*/
+#modificar a{
+	margin-right: 12px;
+}
+
+/*Slider general*/
+#slider{
+	background-color: #BDB76B;
+	color: white;
+	line-height: 20px;
+	margin: 0px auto;
+	margin-top: 20px;
+	border-radius: 7px;
+}
+
+#slider h2{
+	margin-top: 0.2px;
+	padding: 0px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+/*Slider específicos*/
+.usuarios{
+	width: 40%;
+	height: 445px;
+}
+
+.registro{
+	width: 60%;
+	height: 1290px;
+}
+
+.login{
+	width: 40%;
+	height: 550px;
+}
+
+/*Estilos de botones*/
+#btn-white, #alta, #volver{
+	display: block;
+	background-color: white;
+	color: black;
+	font-size: 15px;
+	text-decoration: none;
+	line-height: 20px;
+	box-shadow: 0px 0px 3px #444;
+	border-radius: 4px;
+	transition: 300ms all;
+	cursor: pointer;
+	border: none;
+}
+
+#btn-white:hover{
+	background: #9ACD32;
+	color: white;
+}
+
+#alta:hover{
+	background: #9ACD32;
+	color: white;
+}
+
+#volver:hover{
+	background: #9ACD32;
+	color: white;
+}
+
+#si, #no{
+	/*display: block;*/
+	background-color: white;
+	color: black;
+	font-size: 15px;
+	text-decoration: none;
+	line-height: 20px;
+	box-shadow: 0px 0px 3px #444;
+	border-radius: 4px;
+	transition: 300ms all;
+	cursor: pointer;
+	border: none;
+	width: 40px;
+	height: 30px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+#si:hover{
+	background: #9ACD32;
+	color: white;
+}
+
+#no:hover{
+	background: #9ACD32;
+	color: white;
+}
+
+/*Boton para agregar*/
+.agregar{
+	padding: 10px;
+	width: 90px;
+	height: 40px;
+	margin: 0px auto;
+}
+
+/*Boton de usuario*/
+.usuario{
+	background-color: black;
+	padding: 5px;
+	width: 115px;
+	height: 35px;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+/*boton para buscar*/
+.buscar{
+	padding: 5px;
+	width: 85px;
+	height: 35px;
+	margin-left: auto;
+}
+
+/*boton para subir archivos*/
+.examinar{
+	padding: 2px;
+	width: 90%;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	margin-left: 33px;
+}
+
+/*DETALLES
+Barra lateral izquierda//Foto*/
+#content{
+	width: 45%;
+	float: left;
+	min-height: 350px;
+	margin-right: 25px;
+	margin-top: 20px;
+}
+
+/*Barra lateral derecha//Detalles*/
+#sidebar{
+	width: 90%;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+.sidebar-item{
+	background: #eee;
+	padding: 15px;
+	margin-top: 20px; /***/
+	text-align: -webkit-center;
+}
+
+.sidebar-item h3{
+	font-size: 15px;
+	text-align: right;
+	margin: 0px;
+	padding-bottom: 10px;
+	margin-bottom:  10px;
+	border-bottom: 3px solid #ccc;
+}
+
+#contentin{
+	width: 90%;
+	height: 150px;
+	float: left;
+	margin-top: 40px;
+	
+}
+
+#contenedor{
+	width: 100%;
+	height: 750px;
+	float: left;
+	margin-top: 20px;
+	
+}
+
+#footer{
+	background:#eee;
+	width: 100%;
+	height: 50px;
+	line-height: 45px;
+	color: #444;
+}
+
+#footer p{
+	margin:0px;
+	padding: 0px;
+}
+
+.selector{
+	width: 90%;
+	height: 35px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding:5px;
+	margin-bottom: 10px;
+	color: #444;
+}
+
+.selector:focus{
+	box-shadow: 0px 0px 5px #9ACD32 inset;
+}
+
+
+/*tabla de usuarios*/
+#main-container{
+	margin: 20px auto;
+	width: 80%;
+}
+
+table{
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+th,td{
+	padding: 10px;
+}
+
+thead{
+	background-color: #BDB76B;
+	border-bottom: solid 5px turquoise;
+	color: white;
+}
+
+#busqueda{
+	background: white;
+	border-radius: 5px;
+	width: 200px;
+	display: inline-block;
+	border:solid grey 1px;
+	justify-content: space-around;
+}
+
+.temp{
+background-image:  url("images/rojo.jpg");
+                     
+  background-color: red;
+}
+
+/*RESPONSIVE
+	Evita que se deforme la vista cuando se cambia de 
+	dispositivo (PC, tablet y movil)*/
+	
+	/*Desktop 1284*/
+@media(max-width: 1440px){
+	.center{
+		width: 85%
+	}
+		
+}
+
+@media(max-width: 1314px){
+	.center{
+		width: 95%
+	}
+	#menu ul{
+		width: auto;
+	}
+	#content{
+		width: 45%;
+		float: none;
+		min-height: 350px;
+		margin-right: 0px auto;
+		margin-top: 0px;
+	}
+}
+
+@media(max-width: 797px){
+	#logo{
+		float: left;
+		width: 240px;
+		margin: 0px auto;
+	}
+	#menu, #menu ul{
+		width: auto;
+		float: right;
+		margin: 0px;
+		padding: 0px;
+		line-height: 13px;
+	}
+	#contentin{
+		float: none;
+		width: 100%;
+	}
+	#sidebar{
+		float: none;
+		
+		margin: 0px auto;
+		margin-bottom: 50px;
+	}
+	.usuarios{
+		width: 50%;
+		height: 450px;
+	}
+	.registro{
+		width: 90%;
+		height: 1300px;
+		font-size: 15px ;
+	}
+	.fotos{
+		width: 70%;
+		height: 410px;
+		font-size: 15px ;
+	}
+	.login{
+		width: 70%;
+		height: 300px;
+	}
+	#slider h1{
+		padding-top:80px;
+	}
+	#content{
+		width: 50%;
+		float: none;
+		min-height: 350px;
+		margin-right: 0px auto;
+		margin-top: 0px;
+	}
+	#main-container{
+		margin: 20px auto;
+		width: 90%;
+	}
+	th,td{
+		padding: 8px;
+	}
+}
+
+@media(max-width: 497px){
+	#header{
+		min-height: 130px;
+		overflow: hidden;
+	}
+	#menu,	#menu ul{
+		line-height: 50px;
+	}
+	#menu ul li{
+		margin-left: 7px;
+		margin-right: 7px;
+	}
+	#slider{
+		width: 90%
+	}
+	.usuarios{
+		height: 450px;
+	}
+	.registro{
+		height: 1200px;
+		font-size: 13px ;
+	}
+	.login{
+		height: 480px;
+	}
+	#slider h1{
+		font-size: 19px;
+		padding-top: 30px;
+	}
+	#slider btn-white{
+		margin-top: 20px;
+	}
+	#content{
+		width: 100%;
+		float: none;
+	}
+	#content img{
+		width: 100%;
+	}
+	#sidebar{
+		width: 100%;
+		float: center;
+	}
+	.sidebar-item{
+		margin-top: 0px; 
+		text-align: center;
+		font-size: 13px;
+	}
+	#main-container{
+		font-size: 11px;
+		width: 98%;
+	}
+	
+	th,td{
+	padding: 4px;
+	}
+	.examinar{
+		margin:0px auto;
+		margin-bottom: 10px;
+	}
+}
